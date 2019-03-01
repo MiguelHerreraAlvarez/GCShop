@@ -3,21 +3,36 @@
 	<head>
 	    <meta charset="utf-8">
         <title>Contacto | GCShop</title>
+        <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-        <h1><a href="index.html">GCShop</a></h1>
+        <div class="cabecera">
+            <div class="caja">
+                <a href="./index.html"><img src="resources/GCShopLogo.jpg" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./tabla.html">Vista de productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
         <h2>Formulario de contacto</h2>
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label for="nombre">Nombre :</label>
-            <input type="text" name="nombre" id="nombre" size="20"><br>
-            <label for="direccion">Dirección de correo:</label>
-            <input type="text" name="direccion" id="direccion" size="40"><br>
-            <label for="resumen">Resumen: </label>
-            <input type="text" name="resumen" id="resumen" size="40"><br>
-            <textarea name="cuerpo" cols="60" rows="3">Escriba aquí el mensaje</textarea><br>
-            <input type="submit" value="enviar">
-        </fieldset>
-        <br><br><a href="index.html">Página principal</a>
+        <form action="" method="post">
+            <fieldset>
+                <legend><b>Datos personales</b></legend>
+                <label for="nombre">Nombre :</label>
+                <input type="text" name="nombre" id="nombre" size="20"><br>
+                <label for="direccion">Dirección de correo:</label>
+                <input type="text" name="direccion" id="direccion" size="40"><br>
+                <label for="resumen">Resumen: </label>
+                <input type="text" name="resumen" id="resumen" size="40"><br>
+                <textarea name="cuerpo" cols="60" rows="3">Escriba aquí el mensaje</textarea><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <div class="footer2">
+            <p><a href="./index.html" > Página principal </a></p>
+        </div>
     </body>
 </html>
